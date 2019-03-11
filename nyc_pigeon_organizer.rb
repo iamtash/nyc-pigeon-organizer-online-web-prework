@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
   pigeon_names.each {|pigeon| pigeon_list[pigeon] = {}
   }
 
-  pigeon_list {|pigeon, pigeon_data|
+  pigeon_list.each {|pigeon, pigeon_data|
     data.map {|category, attributes|
       attributes.map {|attribute, pigeons|
         if pigeons.include?(pigeon)
