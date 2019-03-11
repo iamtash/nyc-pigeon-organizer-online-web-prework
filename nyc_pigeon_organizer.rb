@@ -18,6 +18,7 @@ def nyc_pigeon_organizer(data)
             pigeon_list[pigeon][category] << attribute
           else
            pigeon_list[pigeon][category] = [attribute]
+          end
         end
       }
     }
