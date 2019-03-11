@@ -15,9 +15,9 @@ def nyc_pigeon_organizer(data)
       attributes.map {|attribute, pigeons|
         if pigeons.include?(pigeon)
           if pigeon_list[pigeon][category].class == Array
-            pigeon_list[pigeon][category] << attribute
+            pigeon_list[pigeon][category] << attribute.to_s
           else
-           pigeon_list[pigeon][category] = [attribute]
+           pigeon_list[pigeon][category] = [attribute.to_s]
           end
         end
       }
