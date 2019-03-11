@@ -9,6 +9,14 @@ def nyc_pigeon_organizer(data)
   pigeon_list = {}
   pigeon_names.each {|pigeon| pigeon_list[pigeon] = {}
   }
-  binding.pry
-  pigeon_list
+
+  pigeon_list {|pigeon, pigeon_data|
+    data.map {|category, attributes|
+      attributes.map {|attribute, pigeon_names| 
+        if pigeon_names.include?(pigeon)
+          pigeon_list[pigeon][category] = attribute
+        end
+      }
+  }
+  
 end
