@@ -9,4 +9,6 @@ def nyc_pigeon_organizer(data)
   pigeon_list = {}
   pigeon_names.each {|pigeon| pigeon_list[pigeon] = {}
   }
+  binding.pry
+  pigeon_list
 end
