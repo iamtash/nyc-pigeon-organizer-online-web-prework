@@ -17,6 +17,7 @@ def nyc_pigeon_organizer(data)
           pigeon_list[pigeon][category] = attribute
         end
       }
+    }
   }
   binding.pry
   pigeon_list
