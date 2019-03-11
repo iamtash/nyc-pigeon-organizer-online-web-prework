@@ -13,13 +13,12 @@ def nyc_pigeon_organizer(data)
   pigeon_list {|pigeon, pigeon_data|
     data.map {|category, attributes|
       attributes.map {|attribute, pigeon_names|
+        binding.pry
         if pigeon_names.include?(pigeon)
           pigeon_list[pigeon][category] = attribute
         end
       }
     }
   }
-  binding.pry
-  pigeon_list
 
 end
