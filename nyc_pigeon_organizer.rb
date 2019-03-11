@@ -1,3 +1,5 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  pigeon_names = data.map {|category, attributes|
+    attributes.map {|attribute, pigeon_names| pigeon_names}
+  }
 end
